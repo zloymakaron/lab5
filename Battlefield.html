@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>battlefiel5</title>
+	<link rel="stylesheet" href="dop.css">
+</head>
+<body class="battlefiel5">
+	<div>
+		<header>
+			<h1>battlefiel5</h1> 
+		</header>
+	</div>
+	<main class="main">
+		<div class="otp">
+			<video controls id="video" autoplay muted>
+				<source src="video/Battlefield 5.mp4" type="video/mp4">
+				
+			</video>
+		</div>
+		<article>
+		
+			<header class="gamewinfo">
+				<h2>battlefiel5</h2>
+			</header>
+			<section class="gamewinfo">
+			<p> Enter mankind's greatest conflict with Battlefield 5 as the series goes back to its roots with a never-before-seen portrayal of World War 2. Lead your squad to victory with new ways to turn the battlefield to your advantage. Assemble your Company of customized soldiers, weapons, and vehicles then take them on an epic journey through the Tides of War. Experience the most intense, immersive Battlefield yet. You will never be the same. </p>
+						
+			</section>
+		</article>
+		<aside>
+			<form onsubmit="Show();">
+			<div><label for="card">Введите номер карты</label>
+			<input id="card" name="mycard" required pattern="[0-9]{16}"></div>
+			<div><label for="mail">Введите почту</label>
+			<input id="mail" name="mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></div>
+			<div><input type="submit" value="Купить"></div>
+			</form>
+		</aside>
+	</main>
+</body>
+<script>
+		function Show()
+		{
+		let message = 'Спасибо за приобретение. Ваш ключ отправлен на почту '
+		let mail = document.getElementById("mail");
+		message += mail.value;
+		alert(message);
+		}
+	</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>(JS) Task 3 .Net KaAI WEB</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="ProductsGallery">
+		<header class="CategoryName">
+			<h1>Игры</h1>
+		</header>
+		<div>
+		<input value="Цена ^" onclick="Products.sort(equal); Show(Products)" type="button">
+		<input value="Цена v" onclick="Products.sort(equal);Show(Products.reverse())" type="button">
+		<input value="По умолчанию" onclick="Show(OBJArray);" type="button">
+		</div>
+		<main class="GalleryContainer" name="Gallery">
+		</main>
+	</section>
+	<script src="script.js"></script>
+	<script>
+		function Show(Products){
+		let Gal = document.querySelector('section.ProductsGallery > main');
+		Gal.innerHTML = '';
+		for(let i = 0; i < Products.length; i++){
+			let price;
+				price = '<p class="price">'+Products[i].price+'</p>';
+				let link;
+				link = '<a href="'+Products[i].href+'">'+'подробнее'+'</a>';
+			Gal.innerHTML += '<div class="GalleryElement">'+'<p>'+'Computer game'+'</p>'+'<p>'+Products[i].name+'</p>'+price+'<p class="ratingRevievs">'+Products[i].ratingRevievs+'</p>' + link + '</div>'
+		}
+	}
+	</script>
+</html>

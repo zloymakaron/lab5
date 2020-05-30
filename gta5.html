@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>GTA 5</title>
+	<link rel="stylesheet" href="dop.css">
+</head>
+<body class="gta">
+	<div>
+		<header>
+			<h1>GTA 5</h1> 
+		</header>
+	</div>
+	<main class="main">
+		<div class="otp">
+			<video controls id="video" autoplay muted>
+				<source src="video/gta5.mp4" type="video/mp4">
+				
+			</video>
+		</div>
+		<article>
+		
+			<header class="gamewinfo">
+				<h2>Grand Theft Auto V</h2>
+			</header>
+			<section class="gamewinfo">
+			<p>Следуя логике великого социал-дарвиниста Тревора, выживание — главное, за что нужно бороться, и именно способность к выживанию определяет эволюцию (чем меньше людей вокруг, тем легче дышится). В серии Grand Theft Auto революция случилась лишь однажды — с переходом от 2D к 3D в GTA 3, когда появились более или менее серьезный сюжет и твердая внутриигровая логика. В остальном же серия эволюционирует, и не слишком-то охотно. К пятой части эта ее эволюция своего пика явно не достигла — многие стандартные для серии проблемы остались, есть еще над чем работать. Но в своем виде GTA по-прежнему безоговорочно доминирует.
+
+</p>
+						
+			</section>
+		</article>
+		<aside>
+			<form onsubmit="Show();">
+			<div><label for="card">Введите номер карты</label>
+			<input id="card" name="mycard" required pattern="[0-9]{16}"></div>
+			<div><label for="mail">Введите почту</label>
+			<input id="mail" name="mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></div>
+			<div><input type="submit" value="Купить"></div>
+			</form>
+		</aside>
+	</main>
+</body>
+<script>
+		function Show()
+		{
+		let message = 'Спасибо за приобретение. Ваш ключ отправлен на почту '
+		let mail = document.getElementById("mail");
+		message += mail.value;
+		alert(message);
+		}
+	</script>
+</html>

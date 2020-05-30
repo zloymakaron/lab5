@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Divinity Original Sin 2</title>
+	<link rel="stylesheet" href="dop.css">
+</head>
+<body class="Divinity_OriginalSin2">
+	<div>
+		<header>
+			<h1>Divinity Original Sin 2</h1> 
+		</header>
+	</div>
+	<main class="main">
+		<div class="otp">
+			<video controls id="video" autoplay muted>
+				<source src="video/Divinity_ Original Sin 2.mp4" type="video/mp4">
+				
+			</video>
+		</div>
+		<article>
+		
+			<header class="gamewinfo">
+				<h2>Divinity_ Original Sin 2</h2>
+			</header>
+			<section class="gamewinfo">
+			<p> Divinity: Original Sin 2 Definitive Edition is a new way to play one of the absolute best RPGs in years. And whether you’re diving back in on PC, or booting it up on the console for the first time, it’s flexibility, personality, and charm make for an amazing adventure. </p>
+						
+			</section>
+		</article>
+		<aside>
+			<form onsubmit="Show();">
+			<div><label for="card">Введите номер карты</label>
+			<input id="card" name="mycard" required pattern="[0-9]{16}"></div>
+			<div><label for="mail">Введите почту</label>
+			<input id="mail" name="mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></div>
+			<div><input type="submit" value="Купить"></div>
+			</form>
+		</aside>
+	</main>
+</body>
+<script>
+		function Show()
+		{
+		let message = 'Спасибо за приобретение. Ваш ключ отправлен на почту '
+		let mail = document.getElementById("mail");
+		message += mail.value;
+		alert(message);
+		}
+	</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>borderland3</title>
+	<link rel="stylesheet" href="dop.css">
+</head>
+<body class="borderland3">
+	<div>
+		<header>
+			<h1>borderland3</h1> 
+		</header>
+	</div>
+	<main class="main">
+		<div class="otp">
+			<video controls id="video" autoplay muted>
+				<source src="video/Metro Exodus.mp4" type="video/mp4">
+				
+			</video>
+		</div>
+		<article>
+		
+			<header class="gamewinfo">
+				<h2>borderland3</h2>
+			</header>
+			<section class="gamewinfo">
+			<p> Borderlands 3 has surpassed the bar that its predecessor had set. The story is grand in scale, the humor is on-point and updated to 2019, weapons are diverse and the new Vault Hunters are unique in every way. Every BL-fan must pick this game up.</p>
+						
+			</section>
+		</article>
+		<aside>
+			<form onsubmit="Show();">
+			<div><label for="card">Введите номер карты</label>
+			<input id="card" name="mycard" required pattern="[0-9]{16}"></div>
+			<div><label for="mail">Введите почту</label>
+			<input id="mail" name="mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></div>
+			<div><input type="submit" value="Купить"></div>
+			</form>
+		</aside>
+	</main>
+</body>
+<script>
+		function Show()
+		{
+		let message = 'Спасибо за приобретение. Ваш ключ отправлен на почту '
+		let mail = document.getElementById("mail");
+		message += mail.value;
+		alert(message);
+		}
+	</script>
+</html>

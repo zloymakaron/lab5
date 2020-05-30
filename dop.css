@@ -1,0 +1,76 @@
+body{
+	
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+.witcher{
+	background-image: url(img/witcher3bg.jpg);
+}
+.gta{
+	background-image: url(img/gta.jpg);
+}
+.Metro_Exodus{
+	background: url(img/Metro_Exodus.jpg);
+	
+}
+.battlefiel5{
+	background: url(img/battlefiel5.png)
+	
+}
+.borderland3{
+	background: url(img/borderland3.jpg)
+	
+}
+.js4{
+	background:url(img/js4.jpg)
+	
+}
+.Divinity_OriginalSin2{
+	background: url(img/Divinity_OriginalSin2.jpg)
+	
+
+}
+.dyinglight2{
+	background: url(img/dyinglight2.jpg)
+	
+}
+h1{
+	text-align: center;
+	color: white;
+	font-size: 40pt;
+	
+}
+h2{
+	text-align: center;
+	color: navy;
+	font-size: 24pt;
+}
+.gamewinfo{
+	text-align: left;
+	width: 40%;
+	font-size: 14pt;
+	color: white;
+}
+
+video{
+	width: 30%;
+	height: 40%;
+}
+section{
+	float: left;
+	width: 40%;
+}
+a{
+	color: white;
+	border-radius: 4px;
+	background: grey;
+	font-size:26pt;
+	text-decoration: none;
+	
+}
+aside{
+	float:left;
+	width: 60%;
+	text-align: center;
+}

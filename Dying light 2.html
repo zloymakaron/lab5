@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>dying light2</title>
+	<link rel="stylesheet" href="dop.css">
+</head>
+<body class="dyinglight2">
+	<div>
+		<header>
+			<h1>dying light2</h1> 
+		</header>
+	</div>
+	<main class="main">
+		<div class="otp">
+			<video controls id="video" autoplay muted>
+				<source src="video/dying light2.mp4" type="video/mp4">
+				
+			</video>
+		</div>
+		<article>
+		
+			<header class="gamewinfo">
+				<h2>dying light2</h2>
+			</header>
+			<section class="gamewinfo">
+			<p> Beginning as a furtive, desperate survival-horror experience, Dying Light gradually and gratifyingly evolves into a fast, hyper-violent celebration of vertical freedom and zombie destruction. Its main story is unspectacular, but the memorable side quests and sheer fun of exploring its world do a fantastic job of offsetting that, making Dying Light one of the most engrossing open-world games – zombie-infested or otherwise – I've played in a while.
+ </p>
+						
+			</section>
+		</article>
+		<aside>
+			<form onsubmit="Show();">
+			<div><label for="card">Введите номер карты</label>
+			<input id="card" name="mycard" required pattern="[0-9]{16}"></div>
+			<div><label for="mail">Введите почту</label>
+			<input id="mail" name="mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></div>
+			<div><input type="submit" value="Купить"></div>
+			</form>
+		</aside>
+	</main>
+</body>
+<script>
+		function Show()
+		{
+		let message = 'Спасибо за приобретение. Ваш ключ отправлен на почту '
+		let mail = document.getElementById("mail");
+		message += mail.value;
+		alert(message);
+		}
+	</script>
+</html>

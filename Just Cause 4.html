@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Just Cause 4</title>
+	<link rel="stylesheet" href="dop.css">
+</head>
+<body class="js4">
+	<div>
+		<header>
+			<h1>Just Cause 4</h1> 
+		</header>
+	</div>
+	<main class="main">
+		<div class="otp">
+			<video controls id="video" autoplay muted>
+				<source src="video/Just Cause 4.mp4" type="video/mp4">
+				
+			</video>
+		</div>
+		<article>
+		
+			<header class="gamewinfo">
+				<h2>Just Cause 4</h2>
+			</header>
+			<section class="gamewinfo">
+			<p> Just Cause 4 has everything you expect from a Just Cause game, almost to a fault. Relative to Just Cause 3 the improvements are widespread across its beautiful open world, but generally minor. So while blowing up yet another dictator’s army is the same kind of mindless explosive fun and physics-based comedy the series is built on, it doesn’t do much to incorporate the new weather systems or grapple mods into combat. That leaves me with a distinct “more of the same” feeling.</p>
+						
+			</section>
+		</article>
+		<aside>
+			<form onsubmit="Show();">
+			<div><label for="card">Введите номер карты</label>
+			<input id="card" name="mycard" required pattern="[0-9]{16}"></div>
+			<div><label for="mail">Введите почту</label>
+			<input id="mail" name="mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></div>
+			<div><input type="submit" value="Купить"></div>
+			</form>
+		</aside>
+	</main>
+</body>
+<script>
+		function Show()
+		{
+		let message = 'Спасибо за приобретение. Ваш ключ отправлен на почту '
+		let mail = document.getElementById("mail");
+		message += mail.value;
+		alert(message);
+		}
+	</script>
+</html>
